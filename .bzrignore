@@ -1,0 +1,10 @@
+# Feel free to add any of your IDE files here
+/.settings
+/.project
+/.buildpath
+/app/config/parameters.ini
+/app/cache
+/app/logs
+/web/bundles
+/.git
+/vendor

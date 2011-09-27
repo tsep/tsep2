@@ -1,0 +1,31 @@
+{% extends 'TSEPAdminBundle::admin.html.twig' %}
+
+{% block content %}
+    <h1>Processing {{ queue }} Queue...</h1>
+    <em>Please wait while the queue is being processed.</em>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            
+            (function pass () {
+                $.getJSON(window.location, function (data){
+                    if(data) {
+                        window.location = base + 'admin';
+                    }
+                    else {
+                        pass();
+                    }
+                });
+            })();
+        });
+        
+        $(document).ajaxError(function () {
+        	
+        	window.location = base + 'admin';
+        });
+    </script>
+{% endblock %}
