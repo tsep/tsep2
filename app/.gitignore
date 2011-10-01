@@ -1,2 +1,4 @@
 /cache
 /logs
+/bootstrap.php.cache
+/bootstrap_cache.php.cache

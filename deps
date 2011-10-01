@@ -63,5 +63,5 @@
     target=/bundles/FOS/UserBundle
     
 [XaavQueueBundle]
-    git=http://github.com/Xaav/QueueBundle.git
+    git=http://github.com/xaav/XaavQueueBundle.git
     target=/bundles/Xaav/QueueBundle
