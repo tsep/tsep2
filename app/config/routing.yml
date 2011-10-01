@@ -5,7 +5,7 @@ TSEPAdminBundle:
 # import routes from all controllers
 TSEPSearchBundle:
     resource: "@TSEPSearchBundle/Controller"
-    type: annotation 
+    type: annotation
 
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"

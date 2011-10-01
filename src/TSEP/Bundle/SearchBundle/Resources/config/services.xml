@@ -9,15 +9,15 @@
     <parameters>
         <parameter key="tsep_search.indexer.class">TSEP\Component\Indexer\Indexer</parameter>
         <parameter key="tsep_search.indexer.crawling_engine.class">TSEP\Component\Indexer\Engine\CrawlingEngine</parameter>
-    	<parameter key="tsep_search.indexer.indexing_engine.class">TSEP\Component\Indexer\Engine\IndexingEngine</parameter>
+        <parameter key="tsep_search.indexer.indexing_engine.class">TSEP\Component\Indexer\Engine\IndexingEngine</parameter>
     </parameters>
 
     <services>
         <!--- Annotation Metadata Driver Service -->
-        
+
         <service id="tsep_search.indexer.crawling_engine" class="%tsep_search.indexer.crawling_engine.class%" />
         <service id="tsep_search.indexer.indexing_engine" class="%tsep_search.indexer.indexing_engine.class%" />
-        
+
         <service id="tsep_search.indexer" class="%tsep_search.indexer.class%">
           <argument type="service" id="tsep_search.indexer.crawling_engine" />
           <argument type="service" id="tsep_search.indexer.indexing_engine" />

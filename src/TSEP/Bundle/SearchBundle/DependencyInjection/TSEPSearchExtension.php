@@ -16,7 +16,7 @@ class TSEPSearchExtension extends Extension
     public function load(array $configs, ContainerBuilder $container)
     {
         //TODO: Move to yaml.
-    	$xmlloader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $xmlloader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $xmlloader->load('services.xml');
 
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));

@@ -8,17 +8,17 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Search {
 
-	/**
-	 * @ORM\Id
-	 * @ORM\Column(type="integer")
-	 * @ORM\GeneratedValue(strategy="AUTO")
-	 */
-	 protected $id;
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+     protected $id;
 
-	/**
-	 * @ORM\Column(type="string", length="255")
-	 */
-	protected $query;
+    /**
+     * @ORM\Column(type="string", length="255")
+     */
+    protected $query;
 
 
     /**

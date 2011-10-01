@@ -8,11 +8,11 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Profile
 {
-	/**
-	 * @ORM\Id
-	 * @ORM\Column(type="integer")
-	 * @ORM\GeneratedValue(strategy="AUTO")
-	 */
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
     protected $id;
 
     /**
@@ -25,7 +25,7 @@ class Profile
      */
     protected $url;
 
-	/**
+    /**
      * @ORM\Column(type="string", length="255")
      */
     protected $regex;

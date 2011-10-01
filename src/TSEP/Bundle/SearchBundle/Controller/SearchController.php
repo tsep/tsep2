@@ -17,5 +17,5 @@ class SearchController extends Controller
      * @Route("/get/{profile}", name="search_get")
      * @Template()
      */
-	public function getAction ($profile) {}
+    public function getAction ($profile) {}
 }
