@@ -1,80 +1,67 @@
-; The goal here is eventually to move all the external dependencies
-; out of the bzr branch and register them as external code imports.
-; However, this takes quite a bit of time, so I'm just doing that on
-; demand; eventually they'll all be added.
-
 [symfony]
-    bzr=lp:~xaav/tsep/symfony
+    git=http://github.com/symfony/symfony.git
 
-;[twig]
-;    git=http://github.com/fabpot/Twig.git
-;
-;[monolog]
-;    git=http://github.com/Seldaek/monolog.git
-;
-;[doctrine-common]
-;    git=http://github.com/doctrine/common.git
-;    version=origin/3.0.x
-;
-;[doctrine-dbal]
-;    git=http://github.com/doctrine/dbal.git
-;
-;[doctrine]
-;    git=http://github.com/doctrine/doctrine2.git
-;
-;[swiftmailer]
-;    git=http://github.com/swiftmailer/swiftmailer.git
-;    version=origin/4.1
-;
-;[assetic]
-;    git=http://github.com/kriswallsmith/assetic.git
-;
-;[twig-extensions]
-;    git=http://github.com/fabpot/Twig-extensions.git
-;
-;[metadata]
-;    git=http://github.com/schmittjoh/metadata.git
-;
-;[SensioFrameworkExtraBundle]
-;    git=http://github.com/sensio/SensioFrameworkExtraBundle.git
-;    target=/bundles/Sensio/Bundle/FrameworkExtraBundle
-;
-;[JMSSecurityExtraBundle]
-;    git=http://github.com/schmittjoh/JMSSecurityExtraBundle.git
-;    target=/bundles/JMS/SecurityExtraBundle
-;
-;[SensioDistributionBundle]
-;    git=http://github.com/sensio/SensioDistributionBundle.git
-;    target=/bundles/Sensio/Bundle/DistributionBundle
-;
-;[AsseticBundle]
-;    git=http://github.com/symfony/AsseticBundle.git
-;    target=/bundles/Symfony/Bundle/AsseticBundle
-;    
-;[FOSUserBundle]
-;    git=git://github.com/FriendsOfSymfony/FOSUserBundle.git
-;    target=/bundles/FOS/UserBundle
-;    
+[twig]
+    git=http://github.com/fabpot/Twig.git
+    version=v1.2.0
+
+[monolog]
+    git=http://github.com/Seldaek/monolog.git
+    version=1.0.1
+
+[doctrine-common]
+    git=http://github.com/doctrine/common.git
+    version=origin/2.1.x
+
+[doctrine-dbal]
+    git=http://github.com/doctrine/dbal.git
+    version=origin/2.1.x
+
+[doctrine]
+    git=http://github.com/doctrine/doctrine2.git
+    version=origin/2.1.x
+
+[swiftmailer]
+    git=http://github.com/swiftmailer/swiftmailer.git
+    version=v4.1.2
+
+[assetic]
+    git=http://github.com/kriswallsmith/assetic.git
+    version=v1.0.2
+
+[twig-extensions]
+    git=http://github.com/fabpot/Twig-extensions.git
+
+[metadata]
+    git=http://github.com/schmittjoh/metadata.git
+    version=origin/1.0.x
+
+[SensioFrameworkExtraBundle]
+    git=http://github.com/sensio/SensioFrameworkExtraBundle.git
+    target=/bundles/Sensio/Bundle/FrameworkExtraBundle
+
+[JMSSecurityExtraBundle]
+    git=http://github.com/schmittjoh/JMSSecurityExtraBundle.git
+    target=/bundles/JMS/SecurityExtraBundle
+    version=origin/1.0.x
+
+[SensioDistributionBundle]
+    git=http://github.com/sensio/SensioDistributionBundle.git
+    target=/bundles/Sensio/Bundle/DistributionBundle
+
+[SensioGeneratorBundle]
+    git=http://github.com/sensio/SensioGeneratorBundle.git
+    target=/bundles/Sensio/Bundle/GeneratorBundle
+
+[AsseticBundle]
+    git=http://github.com/symfony/AsseticBundle.git
+    target=/bundles/Symfony/Bundle/AsseticBundle
+    version=v1.0.1
+    
+[FOSUserBundle]
+    git=http://github.com/FriendsOfSymfony/FOSUserBundle.git
+    target=/bundles/FOS/UserBundle
+    
 [XaavQueueBundle]
-    bzr=lp:~xaav/tsep/xaavqueuebundle
+    git=http://github.com/Xaav/QueueBundle.git
     target=/bundles/Xaav/QueueBundle
-;    
-;[SonataAdminBundle]
-;    git=git://github.com/sonata-project/SonataAdminBundle.git
-;    target=/bundles/Sonata/Adminbundle
-;
-;[SonatajQueryBundle]
-;    git=git://github.com/sonata-project/SonatajQueryBundle.git
-;    target=/bundles/Sonata/jQueryBundle
-;    
-;[SonataBluePrintBundle]
-;    git=git://github.com/sonata-project/SonataBluePrintBundle.git
-;    target=/bundles/Sonata/BluePrintBundle
-;
-;[KnpMenuBundle]
-;    git=git://github.com/knplabs/KnpMenuBundle.git
-;    target=/bundles/Knp/Bundle/MenuBundle
-;    
-;[SensioGeneratorBundle]
-;    git=http://github.com/sensio/SensioGeneratorBundle.git
-;    target=/bundles/Sensio/Bundle/GeneratorBundle
